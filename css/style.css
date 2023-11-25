@@ -1,0 +1,295 @@
+@font-face {
+    font-family: Blade;
+    src: url(../assets/static/fonts/BLADRMF.TTF);
+}
+
+@font-face {
+    font-family: Victor;
+    src: url(../assets/static/fonts/VictorMono.ttf);
+}
+
+@font-face {
+    font-family: Bak;
+    src: url(../assets/static/fonts/BakbakOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* CONTENT */
+
+body {
+    background-color: black;
+}
+
+.container-3-1000{
+    display: none;
+}
+
+.container-3-600{
+    display: none;
+}
+
+/* CONTAINER-1 */
+
+.container-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/static/img/ct-1-home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.chevron-down{
+    position: absolute;
+    top: 90%;
+    left: 49%;
+}
+
+.chevron-down img{
+    width: 7%;
+}
+
+/* CONTAINER-2 */
+
+.container-2{
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 7% 5%;
+    gap: 6rem;
+    background-color: black;
+}
+
+.infos-container{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 5px 7px 30px rgba(255, 255, 255, 0.1);
+}
+
+.infos-bg{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-1{
+    background-image: url(../assets/static/img/infos-1-img.jpg);
+    border-radius: 20px 0 0 20px;
+}
+
+.bg-2{
+    background-image: url(../assets/static/img/infos-2-img.jpg);
+    border-radius: 20px 0 0 20px;
+}
+
+.infos-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    padding: 0 2% 0 2%;
+    background-color: rgba(20, 20, 20, 0.1);
+}
+
+.infos-txt h3, .infos-txt h4{
+    font-family: 'Blade';
+    font-size: 2rem;
+}
+
+.infos-txt p{
+    font-family: 'Victor';
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* CONTAINER-3 */
+
+.container-3{
+    display: flex;
+    flex-direction: column;
+    padding: 7% 5% 12% 5%;
+    background-color: black;
+    gap: 20px;
+}
+
+.container-3 h5{
+    text-align: center;
+    font-family: 'Blade';
+    color: white;
+    font-size: 2rem;
+}
+
+.container-3-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-card{
+    text-align: center;
+    box-sizing: border-box;
+    width: 17%;
+    padding: 1%;
+    background-color: rgba(20, 20, 20, 0.1);
+    border-radius: 20px;
+    color: white;
+    font-family: 'Bak';
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.1);
+    transition: 0.8s;
+}
+
+.review-card:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.5);
+}
+
+.review-card img{
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+    .title h1{
+        font-size: 3rem;
+    }
+
+    .infos-txt h3, .infos-txt h4{
+        font-size: 1.5rem;
+    }
+
+    .infos-txt p{
+        font-size: 0.88rem;
+    }
+
+    .container-3{
+        display: none;
+    }
+    
+    .container-3-1000{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 50px;
+        padding: 5% 5% 10% 5%;
+    }
+
+    .container-3-1000 .container-3-content{
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .container-3-1000 .review-card{
+        width: 30%;
+    }
+
+    .container-3-1000 h5{
+        text-align: center;
+        font-family: 'Blade';
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .infos-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .infos-bg{
+        width: 100%;
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .infos-txt{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .title h1{
+        font-size: 2.3rem;
+    }
+
+    .title h2{
+        font-size: 1.3rem;
+    }
+
+    .container-3-1000{
+        display: none;
+    }
+
+    .container-3-600{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 0 10% 0;
+    }
+
+    .container-3-600 .container-3-content{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .container-3-600 h5{
+        text-align: center;
+        font-family: 'Blade';
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .review-card{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .title h1{
+        font-size: 2rem;
+    }
+
+    .title h2{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .title h1{
+        font-size: 2rem;
+        margin: 0 5% 0 5%;
+    }
+
+    .title h2{
+        font-size: 1.3rem;
+    }
+
+    .infos-txt{
+        text-align: center;
+    }
+
+    .review-card{
+        padding: 5% 1%;
+    }
+
+}

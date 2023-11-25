@@ -1,0 +1,263 @@
+@font-face {
+    font-family: Blade;
+    src: url(../assets/static/fonts/BLADRMF.TTF);
+}
+
+@font-face {
+    font-family: Victor;
+    src: url(../assets/static/fonts/VictorMono.ttf);
+}
+
+@font-face {
+    font-family: Bak;
+    src: url(../assets/static/fonts/BakbakOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* CONTENT */
+
+body {
+    background-color: black;
+}
+
+/* CONTAINER-1 */
+
+.container-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/static/img/ct-1-about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.5);
+    padding: 20% 10% 10% 10%;
+    box-sizing: border-box;
+    gap: 20%;
+}
+
+.anchor-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.anchor-btn button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid black;
+    padding: 0.6rem 2rem;
+    border-radius: 25px;
+    font-family: 'Bak';
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.anchor-btn button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* CONTAINER-2 */
+
+.container-2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 5%;
+    box-sizing: border-box;
+}
+
+.synopsis-container {
+    display: flex;
+    gap: 40px;
+}
+
+.synopsis-text h3 {
+    text-align: center;
+    font-family: 'Blade';
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.synopsis-text {
+    font-family: 'Victor';
+    width: 80%;
+}
+
+.synopsis-img {
+    min-height: 100%;
+    width: 30%;
+    background-image: url(../assets/static/img/synopsis-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+/* CONTAINER-3 */
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 5% 5%;
+    box-sizing: border-box;
+}
+
+.ct-3-img {
+    background-image: url(../assets/static/gif/ct-3-img.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    min-height: 30vh;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.ct-3-title h4 {
+    color: white;
+    text-align: center;
+    font-family: 'Blade';
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card-img-ct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img-ct img {
+    width: 34%;
+    border-radius: 200px;
+}
+
+.card-name {
+    font-family: 'Blade';
+    margin: 10px 0 20px 0;
+    font-size: x-large;
+}
+
+.actor {
+    font-family: 'Bak';
+}
+
+.actor a {
+    color: white;
+}
+
+.actor a:hover {
+    color: white;
+    font-size: large;
+}
+
+.card-text {
+    font-family: 'Victor';
+}
+
+.card hr {
+    width: 100%;
+    margin: 15px 0 15px 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .synopsis-container {
+        flex-direction: column;
+    }
+
+    .synopsis-text {
+        width: 100%;
+    }
+
+    .synopsis-img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .card {
+        width: 100%;
+    }
+
+    .card-container {
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ct-3-title h4{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .title h1{
+        font-size: 2.5rem;
+    }
+
+    .title h2{
+        font-size: 1.2rem;
+    }
+
+    .anchor-btn{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .title h1{
+        font-size: 2rem;
+        margin: 0 5% 0 5%;
+    }
+
+    .title h2{
+        font-size: 1.3rem;
+    }
+
+    .infos-txt{
+        text-align: center;
+    }
+
+    .review-card{
+        padding: 5% 1%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .synopsis-text{
+        text-align: center;
+    }
+
+}
