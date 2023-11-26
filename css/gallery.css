@@ -25,6 +25,10 @@ body {
     background-color: black;
 }
 
+#gallery{
+    text-decoration: underline;
+}
+
 /* CONTAINER-1 */
 
 .container-1 {

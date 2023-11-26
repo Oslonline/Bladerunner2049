@@ -58,6 +58,10 @@ body {
     box-sizing: border-box;
 }
 
+#home{
+    text-decoration: underline;
+}
+
 /* CONTAINER-2 */
 
 .container-2{
