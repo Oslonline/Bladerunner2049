@@ -45,11 +45,16 @@ body {
     padding: 20% 10% 10% 10%;
     box-sizing: border-box;
     gap: 20%;
+    color: white;
 }
 
 .anchor-btn {
     display: flex;
     gap: 20px;
+}
+
+.anchor-btn a{
+    color: white;
 }
 
 .anchor-btn button {
