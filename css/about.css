@@ -19,6 +19,10 @@
     scroll-behavior: smooth;
 }
 
+#about{
+    text-decoration: underline;
+}
+
 /* CONTENT */
 
 body {
