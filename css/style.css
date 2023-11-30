@@ -17,6 +17,11 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+#home{
+    text-decoration: underline;
 }
 
 /* CONTENT */
@@ -260,6 +265,11 @@ body {
     .review-card{
         width: 50%;
         padding: 5% 1%;
+        box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .review-card:hover{
+        box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.7);
     }
 
     .title h1{
