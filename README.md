@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://blade.oslo418.com/screenshots/main.png" alt="project-image"></p>
 
-<p id="description">A website based on the Bladerunner2049 website weith reviews synopsis gallery...</p>
+<p id="description">A website based on the Bladerunner2049 film with reviews, synopsis, gallery...</p>
 
 <h2>🚀 Demo</h2>
 
